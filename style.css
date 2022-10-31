@@ -12,8 +12,78 @@ body {
   font-family: "Poppins", sans-serif;
   background: #212529;
 }
-
+.navbar {
+  z-index: 999;
+  background: #212529;
+}
 .cvbtn {
   border-radius: 6px;
   border: 1px solid #fff;
+}
+.icons {
+  top: 17rem;
+  left: 1rem;
+  border-radius: 20px;
+}
+
+/* =============== Hero Section Start===================== */
+#home {
+  margin: 7rem 0;
+}
+#home .row {
+  min-height: 70vh;
+}
+#home .name {
+  font-size: 4rem;
+}
+#home .hero-btn {
+  border: 1px double crimson;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+}
+.hero-img {
+  width: 30rem;
+  height: 40rem;
+}
+.hero-img img {
+  width: 100%;
+}
+
+/* =============== Hero Section End===================== */
+
+
+
+
+
+/* ================= Media Queries======================== */
+@media screen and (max-width: 991px) {
+  .cvbtn {
+    display: none;
+  }
+  #home .name {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #home .name {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .icons .icon {
+    display: none;
+  }
+  #home .name {
+    text-align: center;
+  }
+  #home p {
+    text-align: center;
+  }
+  #home .btns {
+    display: flex;
+    justify-content: center;
+  }
+  .hero-img {
+    margin: auto;
+  }
 }
