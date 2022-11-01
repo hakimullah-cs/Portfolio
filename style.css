@@ -4,6 +4,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* ::-webkit-scrollbar{
+  width: 13px;
+}
+::-webkit-scrollbar-track{
+  width: 13px;
+  background:grey;
+  border-left: 0 solid #fff;
+  border-right: 0 solid #fff;
+}
+::-webkit-scrollbar-thumb{
+  background:crimson;
+  width: 0;
+  height: 35%;
+} */
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -12,8 +26,9 @@ body {
   font-family: "Poppins", sans-serif;
   background: #212529;
 }
-.navbar { 
+.navbar {
   z-index: 999;
+  opacity: 1;
   background: #212529;
 }
 .cvbtn {
@@ -51,9 +66,35 @@ body {
 
 /* =============== Hero Section End===================== */
 
-
-
-
+/* =============== About Section Start===================== */
+#about {
+  margin: 5rem 0;
+}
+#about .about-title {
+  font-size: 3.5rem;
+}
+#about .row {
+  min-height: 75vh;
+}
+#about .about {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+#about .about::after {
+  content: "";
+  display: block;
+  background: crimson;
+  width: 9%;
+  height: 3.3px;
+  border-radius: 8px;
+}
+#about .about-description {
+  font-size: 1.6rem;
+}
+#about .about-contact {
+  border: 1px solid crimson;
+}
+/* =============== About Section End===================== */
 
 /* ================= Media Queries======================== */
 @media screen and (max-width: 991px) {
@@ -63,10 +104,20 @@ body {
   #home .name {
     font-size: 3rem;
   }
+  #about .about-description {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (max-width: 768px) {
   #home .name {
     font-size: 3rem;
+  }
+  #about .discover {
+    text-align: center;
+  }
+  #about .about-description {
+    font-size: 1.5rem;
+    text-align: center;
   }
 }
 @media screen and (max-width: 575px) {
@@ -85,5 +136,15 @@ body {
   }
   .hero-img {
     margin: auto;
+  }
+  #about .about {
+    display: none;
+  }
+  #about .discover {
+    display: none;
+  }
+  #about .about-description {
+    margin-top: 3rem;
+    font-size: 1.3rem;
   }
 }
