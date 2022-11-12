@@ -67,41 +67,52 @@ body {
 /* =============== Hero Section End===================== */
 
 /* =============== About Section Start===================== */
-.about-para::after{
-  content: '';
+.about-para::after {
+  content: "";
   display: block;
-  background:crimson;
+  background: crimson;
   width: 15%;
   height: 3px;
   border-radius: 12px;
-  margin:10px auto 0 auto;
+  margin: 10px auto 0 auto;
 }
-.bio::after{
-  content: '';
+.bio::after {
+  content: "";
   display: block;
-  background:orange;
+  background: orange;
   width: 7%;
   margin-top: 5px;
   height: 3px;
   border-radius: 12px;
 }
-.skill-title::after{
-  content: '';
+.skill-title::after {
+  content: "";
   display: block;
-  background:orange;
+  background: orange;
   width: 7%;
   margin-top: 5px;
   height: 3px;
   border-radius: 12px;
 }
-.progress{
+.progress {
   border-radius: 20px;
   height: 10px;
-  background:none;
+  background: none;
 }
 
-
 /* =============== About Section End===================== */
+
+/* ============= Services Section Start===================== */
+.services-container {
+  border-radius: 3px;
+  /* box-shadow: 0px 0px 3px #ccc; */
+  border: 1px solid crimson;
+  background: #353935;
+}
+.services-container ion-icon {
+  font-size: 4rem;
+}
+/* =============== Services Section End===================== */
 
 /* ================= Media Queries======================== */
 @media screen and (max-width: 991px) {
@@ -111,13 +122,11 @@ body {
   #home .name {
     font-size: 3rem;
   }
-
 }
 @media screen and (max-width: 768px) {
   #home .name {
     font-size: 3rem;
   }
-
 }
 @media screen and (max-width: 575px) {
   .icons .icon {
@@ -136,5 +145,4 @@ body {
   .hero-img {
     margin: auto;
   }
-
 }
