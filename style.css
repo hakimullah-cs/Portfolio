@@ -67,58 +67,57 @@ body {
 /* =============== Hero Section End===================== */
 
 /* =============== About Section Start===================== */
-#about {
-  margin: 5rem 0;
-}
-#about .about-title {
-  font-size: 3.5rem;
-}
-#about .row {
-  min-height: 70vh;
-}
-#about .about {
-  font-size: 3.5rem;
-  font-weight: 500;
-}
-#about .about::after {
-  content: "";
+.about-para::after{
+  content: '';
   display: block;
-  background: crimson;
-  width: 9%;
-  height: 3.3px;
-  border-radius: 8px;
+  background:crimson;
+  width: 15%;
+  height: 3px;
+  border-radius: 12px;
+  margin:10px auto 0 auto;
 }
-#about .about-description {
-  font-size: 1.6rem;
+.bio::after{
+  content: '';
+  display: block;
+  background:orange;
+  width: 7%;
+  margin-top: 5px;
+  height: 3px;
+  border-radius: 12px;
 }
-#about .about-contact {
-  border: 1px solid crimson;
+.skill-title::after{
+  content: '';
+  display: block;
+  background:orange;
+  width: 7%;
+  margin-top: 5px;
+  height: 3px;
+  border-radius: 12px;
 }
+.progress{
+  border-radius: 20px;
+  height: 10px;
+  background:none;
+}
+
+
 /* =============== About Section End===================== */
 
 /* ================= Media Queries======================== */
 @media screen and (max-width: 991px) {
-  .cvbtn {
+  /* .cvbtn {
     display: none;
-  }
+  } */
   #home .name {
     font-size: 3rem;
   }
-  #about .about-description {
-    font-size: 1.5rem;
-  }
+
 }
 @media screen and (max-width: 768px) {
   #home .name {
     font-size: 3rem;
   }
-  #about .discover {
-    text-align: center;
-  }
-  #about .about-description {
-    font-size: 1.5rem;
-    text-align: center;
-  }
+
 }
 @media screen and (max-width: 575px) {
   .icons .icon {
@@ -137,14 +136,5 @@ body {
   .hero-img {
     margin: auto;
   }
-  #about .about {
-    display: none;
-  }
-  #about .discover {
-    display: none;
-  }
-  #about .about-description {
-    margin-top: 3rem;
-    font-size: 1.3rem;
-  }
+
 }
