@@ -40,6 +40,20 @@ body {
   left: 1rem;
   border-radius: 20px;
 }
+.navigator{
+  position: relative;
+}
+.navigator a{
+  background: orange;
+  position: fixed;
+  bottom: 4rem;
+  right: 3rem;
+  display: inline-block;
+  border: 1px solid #fff;
+  padding: 1rem;
+  border-radius:1.5rem;
+}
+
 
 /* =============== Hero Section Start===================== */
 #home {
