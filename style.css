@@ -229,6 +229,16 @@ body {
 
 /* =============== Team Section End===================== */
 
+
+/* =============== Footer Section start===================== */
+.footer{
+  padding-top:5rem;
+}
+.list{
+  list-style: none;
+}
+/* =============== Footer Section End===================== */
+
 /* ================= Media Queries======================== */
 @media screen and (max-width: 991px) {
   /* .cvbtn {
