@@ -35,6 +35,9 @@ body {
   position: relative;
   overflow: hidden;
 }
+.hover-danger a:focus{
+  color: #cf3948 !important;
+}
 .hover-danger a::after {
   content: "";
   background-color: #cf3948;
@@ -113,15 +116,23 @@ body {
   border-radius: 12px;
   margin: 10px auto 0 auto;
 }
-.bio::after {
+.my{
+  position: relative;
+  width: 10%;
+  overflow: hidden;
+  border-bottom: 3px solid orange;
+  padding-bottom: 5px;
+}
+/* .my::after {
   content: "";
   display: block;
+  position:absolute;
   background: orange;
-  width: 7%;
+  width: 100%;
   margin-top: 5px;
   height: 3px;
   border-radius: 12px;
-}
+} */
 .skill-title::after {
   content: "";
   display: block;
@@ -269,11 +280,8 @@ body {
 }
 @media screen and (max-width: 768px) {
   #home .name {
-    font-size: 3rem;
+    font-size: 3srem;
   }
-   .portfolio-btns{
-    margin-left: 15rem;
-  } 
 }
 @media screen and (max-width: 575px) {
   .icons .icon {
