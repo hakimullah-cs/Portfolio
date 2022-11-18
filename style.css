@@ -265,11 +265,15 @@ body {
   #home .name {
     font-size: 3rem;
   }
+ 
 }
 @media screen and (max-width: 768px) {
   #home .name {
     font-size: 3rem;
   }
+   .portfolio-btns{
+    margin-left: 15rem;
+  } 
 }
 @media screen and (max-width: 575px) {
   .icons .icon {
@@ -288,4 +292,7 @@ body {
   .hero-img {
     margin: auto;
   }
+  .portfolio-btns{
+    margin-left: 5rem;
+  } 
 }
