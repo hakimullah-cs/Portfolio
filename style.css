@@ -165,17 +165,17 @@ body {
 .active {
   border: 1px solid crimson;
 }
-.img-overlay {
+.image {
   position: relative;
   overflow: hidden;
   border-radius: 7px;
-  width: 350px;
+  width: 290px;
 }
-.img-overlay img {
+.image img {
   border-radius: 7px;
   width: 100%;
 }
-.img-overlay .overlay {
+.image .overlay {
   position: absolute;
   top: 0%;
   left: 0%;
@@ -194,7 +194,7 @@ body {
   z-index: 999;
   color: white;
 }
-.img-overlay:hover > .overlay {
+.image:hover > .overlay {
   transform: translateY(0);
   opacity: 0.5;
 }
@@ -265,6 +265,7 @@ body {
   #home .name {
     font-size: 3rem;
   }
+ 
  
 }
 @media screen and (max-width: 768px) {
