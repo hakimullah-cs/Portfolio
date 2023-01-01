@@ -55,6 +55,9 @@ body {
   color: #cf3948 !important;
   transition: 400ms ease-in-out;
 }
+.collapse a.show{
+  color: orange !important;
+}
 .cvbtn {
   border-radius: 6px;
   border: 1px solid #fff;
