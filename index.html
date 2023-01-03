@@ -13,11 +13,20 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- --------------- Custom CSS File--------------------- -->
     <link rel="stylesheet" href="style.css" />
 
   </head>
   <body>
+    <div class="popup p-4 animate__animated animate__zoomIn animate__delay-1 animate__faster animate__repeat-1">
+    <div class="profile m-auto"><img src="/images/HU.jpg" alt=""></div>
+    <div class="text"><p class="text-center fs-4 text-warning mt-3 ">Hello Sir/Madam! Welcome to my personal Website.You have any Query Plz Conncet me...?</p></div>
+    <div class="btns mt-3 text-center"><a href="mailto:hakimullah851@gmail.com" class="contact bg-primary shadow">Contact Me</a>
+  </div>
+  <ion-icon name="close-outline" class="dismiss fs-1 text-warning fw-bold"></ion-icon>
+    </div>
     <!-- ---------------------- Header Section Start----------------------- -->
     <header class="header">
       <nav class="navbar navbar-expand-lg fixed-top">
@@ -101,7 +110,7 @@
 
         <div class="col-md-4">
           <div class="hero-img m-md-none m-sm-auto">
-            <img src="/images/hero.png" alt="" class="img-fluid">
+            <img src="/images/hero.png" alt="Profile-image" class="img-fluid">
           </div>
         </div>
       </div>
@@ -249,37 +258,38 @@
             </div>
           </div>
         </div>
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-6 d-flex justify-content-center">
-            <div class="portfolio-btns">
-              <div class="btn p-btn fs-xl-3 fs-lg-4 fs-sm-2 text-white active" data-btn-num="1">Website</div>
-              <div class="btn p-btn fs-xl-3 fs-lg-4 fs-sm-2 text-white" data-btn-num="2">Design</div>
-              <div class="btn p-btn fs-xl-3 fs-lg-4 fs-sm-2 text-light" data-btn-num="3">Youtube</div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center gap-2">
-          <div class="col-md-3 img-overlay p-btn--1 mb-3">
+
+
+       <ul class="gallery text-white d-flex justify-content-center gap-5 mb-5">
+        <li class="Filter fs-2 active" data-filter="all">All</li>
+        <li class="Filter fs-2" data-filter="portfolio">Portfolio</li>
+        <li class="Filter fs-2" data-filter="clones">Clones</li>
+       </ul>
+
+
+
+        <div class="row projects justify-content-center gap-2">
+          <div class="col-md-3 img-overlay p-btn--1 mb-3" data-item="clones">
               <img src="/images/p1.jpg" alt="">
               <div class="overlay"><a href="https://www.youtube.com/" class=" fs-1 text-uppercase text-decoration-none">Project</a></div>
           </div>
-          <div class="col-md-3 img-overlay p-btn--1 mb-3">
+          <div class="col-md-3 img-overlay p-btn--1 mb-3" data-item="clones">
               <img src="/images/p2.jpg" alt="">
               <div class="overlay"><a href="#" class=" fs-1 text-uppercase text-decoration-none">Project</a></div>
           </div>
-          <div class="col-md-3 img-overlay p-btn--1 mb-3">
+          <div class="col-md-3 img-overlay p-btn--1 mb-3" data-item="clones">
               <img src="/images/p3.jpg" alt="">
               <div class="overlay"><a href="#" class=" fs-1 text-uppercase text-decoration-none">Project</a></div>
           </div>
-          <div class="col-md-3 img-overlay p-btn--1 mb-3">
+          <div class="col-md-3 img-overlay p-btn--1 mb-3" data-item="portfolio">
               <img src="/images/p4.jpg" alt="">
               <div class="overlay"><a href="#" class=" fs-1 text-uppercase text-decoration-none">Project</a></div>
           </div>
-          <div class="col-md-3 img-overlay p-btn--1 mb-3">
+          <div class="col-md-3 img-overlay p-btn--1 mb-3" data-item="portfolio">
               <img src="/images/p1.jpg" alt="">
               <div class="overlay"><a href="#" class=" fs-1 text-uppercase text-decoration-none">Project</a></div>
           </div>
-          <div class="col-md-3 img-overlay p-btn--1">
+          <div class="col-md-3 img-overlay p-btn--1" data-item="portfolio">
               <img src="/images/p55.jpg" alt="">
               <div class="overlay"><a href="#" class=" fs-1 text-uppercase text-decoration-none">Project</a></div>
           </div>
@@ -297,7 +307,7 @@
           <div class="section-title text-center">
             <h4 class="text-center text-danger fs-4">Teams</h4>
             <h2 class="about-title text-uppercase fw-bold fs-1 text-white mb-4">OUR  <span class="text-warning">Teams</span></h2>
-            <p class=" about-para text-center text-white fs-4 mb-5">There are 3 members of our team <span class="text-warning fs-2">Mr.Hakim Ullah</span> , <span class="text-warning fs-2">Mr.Junaid Khan</span> <span class="text-danger fs-1">&</span> <soan class="text-warning fs-2">Mr.Umar saddiq</soan> everyone id expert in their own feild the details is below:</p>
+            <p class=" about-para text-center text-white fs-4 mb-5">There are 3 members of our team <span class="text-warning fs-2">Mr.Hakim Ullah</span> , <span class="text-warning fs-2">Mr.Junaid Khan</span> <span class="text-danger fs-1">&</span> <soan class="text-warning fs-2">Mr.Umar saddiq</soan> everyone is expert in their own feild the details is below:</p>
           </div>
         </div>
       </div>
