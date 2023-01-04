@@ -270,27 +270,56 @@ body {
 #team {
   padding-top: 5rem;
 }
-.card {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+.member{
+  margin-bottom: 20px;
   overflow: hidden;
-  border-radius: 15px;
-  z-index: -1;
+  border-radius: 8px;
+  background:#fff;
 }
-.cover img {
-  height: 200px;
-  width: 100%;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+.member-img{
+  position: relative;
+  overflow: hidden;
 }
-.profile {
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
-  border: 5px solid #fff;
+.member-img .social{
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  right:0;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.36s ease-in-out;
 }
-.profile img {
-  width: 100%;
-  border-radius: 50%;
+.member:hover .social{
+  opacity: 1;
+  bottom: 15px;
+}
+.member .social a{
+  color: #1111;
+  margin: 0 3px;
+  padding-top: 7px;
+  border-radius: 50px;
+  width: 36px;
+  height: 36px;
+  background:#e03a3c;
+  display: inline-block;
+  transition: all 0.23s ease-in;
+  color: #fff;
+  
+}
+.member .social a:hover{
+  background:#111111 ;
+}
+.member .member-info{
+  padding: 15px 10px;
+}
+.member .member-info h4{
+  font-size: 3rem;
+  margin-top: 5px;
+}
+.member .member-info span{
+  display: block;
+  font-size: 1.3rem;
+  color: grey;
 }
 
 /* =============== Team Section End===================== */
