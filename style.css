@@ -340,6 +340,25 @@ body {
 .sendbtn {
   border-radius: 25px;
 }
+
+.address{
+  /* border: 1px solid red; */
+  box-shadow: 0px 0px 3px grey;
+}
+.Phone{
+  box-shadow: 0px 0px 3px grey;
+}
+.Email{
+  box-shadow: 0px 0px 2px grey;
+  /* box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.07); */
+}
+.right-side input{
+  
+  border: none;
+}
+.right-side textarea{
+  border: none;
+}
 /* =============== Contact US Section End===================== */
 
 /* =============== Footer Section start===================== */
