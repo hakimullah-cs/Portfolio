@@ -241,6 +241,11 @@ body {
 }
 .team-card .profile-text a {
   border-radius: 7px;
+  transition: all 0.24s ease-in-out;
+}
+.team-card .profile-text a:hover{
+  background:#cf3948 !important;
+  color: #fff !important;
 }
 ion-icon {
   border-radius: 22px;
