@@ -21,33 +21,10 @@ let typed = new Typed(".auto-text", {
   loop: true,
 });
 
-// ============== Popup Code================
-// window.addEventListener('scroll',(e)=>{
-//   e.preventDefault();
-  
-//   if(window.scrollY>900){
-//    let timeout= setTimeout(function () {
-//       var popup = document.querySelector(".popup");
-//       popup.style.display = "block";
-//       let dismiss = document
-//         .querySelector(".dismiss")
-//         .addEventListener("click", () => {
-//           popup.style.display = "none";
-//         });
-//     }, 7000);
-//   }
-//   if(window.scrollY<=0){
-//     clearTimeout(timeout);
-//   }
- 
-// });
-
-
 // ============== Projects Section JS Code===================
 let filterbtn=document.querySelectorAll('.gallery .Filter');
 console.log(filterbtn);
 let project=document.querySelectorAll('.projects .img-overlay');
-console.log(project);
 
 filterbtn.forEach((item)=>{
    item.addEventListener('click',()=>{

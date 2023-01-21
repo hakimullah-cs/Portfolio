@@ -4,20 +4,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* ::-webkit-scrollbar{
-  width: 13px;
-}
-::-webkit-scrollbar-track{
-  width: 13px;
-  background:grey;
-  border-left: 0 solid #fff;
-  border-right: 0 solid #fff;
-}
-::-webkit-scrollbar-thumb{
-  background:crimson;
-  width: 0;
-  height: 35%;
-}  */
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -26,48 +12,6 @@ body {
   font-family: "Poppins", sans-serif;
   background: #212529;
 }
-.popup {
-  position: relative;
-  background: #52575D;
-  width: 400px;
-  box-shadow: 0px 0px 1rem #ccc;
-  border-radius: 3px;
-  position: fixed;
-  top: 40%;
-  left: 33%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-  display:none;
-}
-.popup .btns a {
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  padding: 1rem 1.5rem;
-  margin-right: 10px;
-  border-radius: 8px;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  transition: all 0.23s ease-in-out;
-}
-.popup .btns a:hover{
-  background:#fff !important;
-  color: #cf3948 !important;
-  border: 1px solid crimson !important;
-}
-.popup .dismiss{
-  position: absolute;
-  top: 1px;
-  right: 1px;
- transition: all 0.3s ease-in-out;
-}
-.popup .dismiss:hover{
-  color: crimson !important;
-}
-
 .navbar {
   z-index: 999;
   opacity: 1;
@@ -98,7 +42,8 @@ body {
   transition: 400ms ease-in-out;
 }
 .collapse a.show {
-  color: orange !important;
+  color: crimson !important;
+  border-bottom: 2px solid crimson;
 }
 .cvbtn {
   border-radius: 6px;
@@ -218,14 +163,21 @@ body {
 .active {
   border: 1px solid crimson;
 } */
-.gallery{
+.gallery {
   list-style: none;
 }
-.gallery li{
+.gallery li {
   padding: 5px 1.5rem;
   border-radius: 25px;
+  transition: all 0.23s ease-in-out;
 }
-.gallery li.active{
+.gallery li:hover{
+  cursor: pointer;
+  border: 1px solid crimson;
+  color: orange;
+}
+
+.gallery li.active {
   border: 1px solid crimson;
   color: orange;
 }
@@ -263,6 +215,7 @@ body {
 .img-overlay:hover > .overlay {
   transform: translateY(0);
   opacity: 0.5;
+  cursor: pointer;
 }
 /* =============== projects Section End===================== */
 
@@ -270,56 +223,35 @@ body {
 #team {
   padding-top: 5rem;
 }
-.member{
-  margin-bottom: 20px;
-  overflow: hidden;
+.team-card {
+  background: #212529;
+  padding: 1rem 3rem;
+  box-shadow: 0px 0px 1rem #212;
   border-radius: 8px;
-  background:#fff;
 }
-.member-img{
-  position: relative;
-  overflow: hidden;
+.team-card .profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid darkorange;
+  margin-bottom: 3rem;
 }
-.member-img .social{
-  position: absolute;
-  left: 0;
-  bottom: 30px;
-  right:0;
-  text-align: center;
-  opacity: 0;
-  transition: all 0.36s ease-in-out;
+.team-card .profile-image img {
+  border-radius: 50% !important;
 }
-.member:hover .social{
-  opacity: 1;
-  bottom: 15px;
+.team-card .profile-text a {
+  border-radius: 7px;
 }
-.member .social a{
-  color: #1111;
-  margin: 0 3px;
-  padding-top: 7px;
-  border-radius: 50px;
-  width: 36px;
-  height: 36px;
-  background:#e03a3c;
-  display: inline-block;
-  transition: all 0.23s ease-in;
-  color: #fff;
-  
-}
-.member .social a:hover{
-  background:#111111 ;
-}
-.member .member-info{
-  padding: 15px 10px;
-}
-.member .member-info h4{
-  font-size: 3rem;
-  margin-top: 5px;
-}
-.member .member-info span{
-  display: block;
-  font-size: 1.3rem;
+ion-icon {
+  border-radius: 22px;
+  padding: 4px;
+  transition: all 0.34s ease-in-out;
   color: grey;
+}
+ion-icon:hover {
+  background: crimson;
+  color: #fff !important;
+  cursor: pointer;
 }
 
 /* =============== Team Section End===================== */
@@ -341,22 +273,21 @@ body {
   border-radius: 25px;
 }
 
-.address{
+.address {
   /* border: 1px solid red; */
   box-shadow: 0px 0px 3px grey;
 }
-.Phone{
+.Phone {
   box-shadow: 0px 0px 3px grey;
 }
-.Email{
+.Email {
   box-shadow: 0px 0px 2px grey;
   /* box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.07); */
 }
-.right-side input{
-  
+.right-side input {
   border: none;
 }
-.right-side textarea{
+.right-side textarea {
   border: none;
 }
 /* =============== Contact US Section End===================== */
